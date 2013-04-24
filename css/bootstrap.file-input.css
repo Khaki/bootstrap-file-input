@@ -11,7 +11,12 @@
 
 /*file upload*/
 .file-input input[type="file"] {
-    position: absolute;
+    /*The absolute attribute of position will make a scroll bar appeared at bottom of the page which using
+    this .file-input in <input type="file"...>.
+    Without it, everything performs fine.
+    Explorer Version: Chrome Latest at Apr.23.2013
+    */
+    /*position: absolute;*/
     right: 0;
     top: 0;
     opacity: 0;
